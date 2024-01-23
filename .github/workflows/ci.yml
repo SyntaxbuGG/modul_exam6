@@ -16,6 +16,7 @@ jobs:
         run: pip install -r quiz-p16/requirements.txt
       - name: Run test
         env:
-          DJANGO_SETTING_MODULE: QuizProject.settings.local
+          DJANGO_SETTINGS_MODULE: QuizProject.settings.local
 
         run: python manage.py test
+        working-directory: quiz-p16/
