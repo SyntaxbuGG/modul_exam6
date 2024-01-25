@@ -14,7 +14,7 @@ router.register(r'questions', QuestionViewSet)
 
 urlpatterns = [
     path('', hello_world),
-    path('1/', quiz_types),
+    path('1/', quiz_types, name='quiz_types'),
     path('types/<int:pk>', quiz_type_detail),
     # path('serializer/', views.SerializerGet.as_view()),
     # path('question/', QuestionListAPIView.as_view(), name='question-listapi'),
