@@ -43,8 +43,8 @@ jobs:
           SQL_HOST: localhost
           SQL_PORT: 5432
         run:
-          python manage.py migrate
-          python manage.py test
+          python manage.py migrate && python manage.py test
+
 
 
         working-directory: quiz-p16/
